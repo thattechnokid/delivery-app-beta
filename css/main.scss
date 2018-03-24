@@ -1,0 +1,59 @@
+body{
+  overflow-x: hidden;
+}
+
+
+.nav-container{
+  img{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+  }
+  height:33.33333vw;
+}
+
+.spacer30{
+  height: 30px;
+}
+.pizza-selector-container{
+  .btn-group{
+    width: 100%;
+  }
+  &.col-xs-12{
+    .btn{
+      width: 100%;
+      font-size: 18px;
+      // margin-bottom: 30px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  button img{
+    width: 100px;
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 10%;
+  }
+}
+.dropdown-menu{
+  width: 100%;
+  li{
+    &:hover{
+      cursor: pointer;
+    }
+    a{
+      img{
+        width: 25%;
+        margin-right:30px;
+      }
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+}

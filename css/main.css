@@ -1,0 +1,41 @@
+body {
+  overflow-x: hidden; }
+
+.nav-container {
+  height: 33.33333vw; }
+  .nav-container img {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%; }
+
+.spacer30 {
+  height: 30px; }
+
+.pizza-selector-container .btn-group {
+  width: 100%; }
+.pizza-selector-container.col-xs-12 .btn {
+  width: 100%;
+  font-size: 18px; }
+  .pizza-selector-container.col-xs-12 .btn:hover {
+    cursor: pointer; }
+.pizza-selector-container button img {
+  width: 100px;
+  position: relative;
+  transform: translate(-50%, 0%);
+  left: 10%; }
+
+.dropdown-menu {
+  width: 100%; }
+  .dropdown-menu li:hover {
+    cursor: pointer; }
+  .dropdown-menu li a {
+    font-size: 18px;
+    font-weight: bold; }
+    .dropdown-menu li a img {
+      width: 25%;
+      margin-right: 30px; }
+
+/*# sourceMappingURL=main.css.map */

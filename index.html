@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Pizza Factory | Delivery App</title>
+
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#c73f21">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-4 nav-container">
+          <img src="pf.png" alt="Pizza Factory Logo">
+        </div>
+      </div>
+      <div class="spacer30"></div>
+      <div class="row">
+        <div class="col-xs-12 pizza-selector-container">
+          <!-- PIZZAS -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="pizza.png">
+              Pizza Size
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a href="#" id="mini" title="Select this card"><img src="pizza.png">Mini</a>
+              </li>
+              <li>
+                <a href="#" id="small" title="Select this card"><img src="pizza.png">Small</a>
+              </li>
+
+              <li>
+                <a href="#" id="medium" title="Select this card"><img src="pizza.png">Medium</a>
+              </li>
+              <li>
+                <a href="#" id="large" title="Select this card"><img src="pizza.png">Large</a>
+              </li>
+              <li>
+                <a href="#" id="xlarge" title="Select this card"><img src="pizza.png">Extra-Large</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="spacer30"></div>
+
+          <!-- SANDWICHES -->
+          <div class="btn-group">
+            <!-- Sandwiches -->
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="sandwich.png">
+              Sandwich Temp.
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+
+              <li>
+                <a href="#" id="cold-sand" title="Select this card"><img src="sandwich.png">Cold</a>
+              </li>
+              <li>
+                <a href="#" id="toast-sand" title="Select this card"><img src="sandwich.png">Toasted</a>
+              </li>
+
+              <li>
+                <a href="#" id="hot-sand" title="Select this card"><img src="sandwich.png">Hot</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="spacer30"></div>
+
+          <!-- APPETIZERS -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="apps.png">
+              Appetizers
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+
+              <li>
+                <a href="#" id="pasta" title="Select this card"><img src="pasta.png">Pastas</a>
+              </li>
+              <li>
+                <a href="#" id="wings" title="Select this card"><img src="wings.png">Chicken Wings</a>
+              </li>
+
+              <li>
+                <a href="#" id="pizzaBread"><img src="pizza.png" alt="">Pizza Bread</a>
+              </li>
+
+              <li>
+                <a href="#" id="breadSticks"><img src="breadsticks.png" alt="">Breadsticks</a>
+              </li>
+              <li>
+                <a href="#" id="soup"><img src="soup.png" alt="">Soup</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="spacer30"></div>
+
+          <!-- SALADS -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default" id="salads">
+              <img src="salad.png">
+              Salads
+            </button>
+          </div>
+
+          <div class="spacer30"></div>
+
+          <form action="index.html" method="POST" name="delivery-time">
+            <label>Drive Time</label>
+            <input type="number" name="time" value="" placeholder="8 (Minutes)">
+            <input type="button" name="" value="Get ETA">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  </body>
+  </html>
