@@ -14,7 +14,9 @@ var prepTime = 0,
     soup = document.querySelector('#soup'),
     salads = document.querySelector('#salads'),
     driveTime = document.querySelector('#deliveryTime'),
-    submitBtn = document.querySelector('#submitBtn');
+    submitBtn = document.querySelector('#submitBtn'),
+    sendETA = document.querySelector('#etaBtn'),
+    etaValue = document.querySelector('#etaValue');
 
 
 const miniTime = 12,
@@ -80,6 +82,10 @@ const miniTime = 12,
           prepTime+=parseInt((deliveryTime.value));
           submitBtn.style.display = 'none';
           alert(`The Customer's Meal Will Be Delivered in ${prepTime} Minutes or So`);
+          break;
+        case 'etaBtn':
+          etaValue.value = prepTime;
+
           break;
         default:
 

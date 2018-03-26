@@ -117,7 +117,7 @@
 
           <!-- SALADS -->
           <div class="btn-group">
-            <button type="button" class="btn btn-default" id="salads">
+            <button type="" class="btn btn-default" id="salads">
               <img src="salad.png">
               Salads
             </button>
@@ -125,10 +125,13 @@
 
           <div class="spacer30"></div>
 
-
-            <label>Drive Time</label>
-            <input type="number" name="time" value="" placeholder="8 (Minutes)" id="deliveryTime">
-            <input type="button" name="" value="Get ETA" id="submitBtn">
+            <form action="deliveryupdate.php" name="etaForm" method="post">
+              <label>Drive Time</label>
+              <input type="number" name="time" value="" placeholder="8 (Minutes)" id="deliveryTime">
+              <input type="button" name="" value="Get ETA" id="submitBtn">
+              <input type="text" name="etaValue" value="" id="etaValue">
+              <button type="" name="sendETA" id="etaBtn">Send ETA</button>
+            </form>
 
         </div>
       </div>
